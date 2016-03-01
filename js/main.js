@@ -1,40 +1,36 @@
 var insects = [{
   name: 'Ant Nest Beetle',
-  image: 'images/ant-nest-beetle.jpg',
+  img: 'ant-nest-beetle.jpg',
   family: 'Carabidae',
-  min size: 6,
-  max size: 20,
-  eats insects: 'Yes',
-  eats dung: 'No',
-  eats plants: 'No'
+  size: [6, 20],
+  food: {
+    eatsInsects: 'Yes',
+  }
 }, {
   name: 'Dung Beetle',
-  image: 'images/dung-beetle.jpg',
+  img: 'dung-beetle.jpg',
   family: 'Scarabidae',
-  min size: 20,
-  max size: 30,
-  eats insects: 'No',
-  eats dung: 'Yes',
-  eats plants: 'No'
+  size: [20, 30],
+  food: {
+    eatsDung: 'Yes'
+  }
 }, {
   name: 'Stag Beetle',
-  image: 'images/stag-beetle.jpg',
+  img: 'stag-beetle.jpg',
   family: 'Lucanidae',
-  min size: 5,
-  max size: 120,
-  eats insects: 'No',
-  eats dung: 'No',
-  eats plants: 'Yes'
+  size: [5, 120],
+  food: {
+    eatsPlants: 'Yes'
+  }
 }, {
   name: 'Tortoise Beetle',
-  image: 'images/tortoise-beetle.jpg',
+  img: 'tortoise-beetle.jpg',
   family: 'Cassidinae',
-  min size: 1,
-  max size: 18,
-  eats insects: 'No',
-  eats dung: 'No',
-  eats plants: 'Yes'
-}]
+  size: [1, 18],
+  food: {
+    eatsPlants: 'Yes'
+  }
+}];
 
 // Create your variable here, name it `insects`
 
